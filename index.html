@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Online Application</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Online Application Portal</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Apply Now</a>
+    <a href="about.html">About Us</a>
+  </nav>
+  <div class="hero">
+    <h2>Step Into Your Future!</h2>
+    <button id="scrollButton">Learn More</button>
+  </div>
+  <section id="info">
+    <h2>Why Apply with Us?</h2>
+    <p>We provide a seamless and efficient way to apply for opportunities that align with your dreams.</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 Online Application Portal</p>
+  </footer>
+  <script>
+    $(document).ready(function() {
+      $("#scrollButton").click(function() {
+        $("html, body").animate({ scrollTop: $("#info").offset().top }, 1000);
+      });
+    });
+  </script>
+</body>
+</html>
